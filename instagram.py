@@ -1,0 +1,4 @@
+import requests
+response=requests.get("https://graph.instagram.com/me/media?fields=id,caption,media_url,media_type,timestamp,children{media_url}&limit=10&access_token=IGQWROZAER2M3d6T2xhbDB2OUpXelRfUDNlRFJYRWY2ZADZAfenQwaFIwVnE4QVBMUWxVMVc0MDN1Q0pTa2txaGl0RzEtdTg4Ti1ocHk0Y0t2U3BPU1NLSG9nMHhSNW1FODFmck5TY3dKSzZA0NHJEN2F1NENSNHhXVTgZD")
+
+print(response.json())
